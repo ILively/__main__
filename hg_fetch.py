@@ -1,8 +1,6 @@
 import requests as Req
 from json import dumps
 
-# 0.0.1 12-30-2025
-# Launch to process JSON data from server
 def hg_fetch(URL: str, file_name: str) -> object:
     """
     Fetch and save Hugging Face dataset rows to a local JSON file.
@@ -29,4 +27,3 @@ def hg_fetch(URL: str, file_name: str) -> object:
 
 if __name__ == "__main__":
     hg_fetch("https://datasets-server.huggingface.co/rows?dataset=nvidia%2FNemotron-Pretraining-Dataset-sample&config=Nemotron-CC-Diverse-QA&split=train&offset=0&length=100", "Nemotron-CC-Diverse-QA.json")
-
