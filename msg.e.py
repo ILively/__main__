@@ -6,8 +6,8 @@ from typing import Final
 from dotenv import get_key 
 
 # Define email details
-sender_email: str = "ztymlbb@gmail.com" # your_email@gmail.com
-receiver_email: str = "vueesy@gmail.com" # receiver_email@example.com
+sender_email: str = "" # your_email@gmail.com
+receiver_email: str = "" # receiver_email@example.com
 # Use environment variables or prompt for passwords to keep them secure
 # For this example, replace 'your_app_password' with your Gmail App Password
 # Consider using environment variables in production: os.getenv("EMAIL_PASS")
@@ -41,4 +41,3 @@ try:
 
 except smtplib.SMTPException as Error:
     print(f"Error: Unable to send email. {Error}")
-
